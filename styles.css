@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #25272e;
+    background-color: #292c34;
 }
 
 header{
@@ -14,7 +14,7 @@ header{
 }
 
 header > h1{
-    color: #25272e;
+    color: #292c34;
     text-align: center;
     font-family: sans-serif;
 }
@@ -50,4 +50,45 @@ header > h1{
     position: absolute;
     top: 30px;
     right: -30px;
+}
+
+.result{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.result > p{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.choices{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.choice{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 20px;
+    opacity: 0.5;
+    transition: all 1s ease;
+}
+
+.choice:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.choice > img{
+    height: 200px;
+}
+
+#action-msg{
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
