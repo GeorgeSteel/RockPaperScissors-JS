@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1>Rock Paper Scissors</h1>
+    <div class="score-board">
+        <div class="badge" id="user-laber">user</div>
+        <div class="badge" id="computer-label">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <div class="result">
+        <p>Paper covers Rock. You Win!</p>
+    </div>
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="imgs/rock.png" alt="rock-hand">
+        </div>
+        <div class="choice" id="p">
+            <img src="imgs/paper.png" alt="paper-hand">
+        </div>
+        <div class="choice" id="s">
+            <img src="imgs/scissors.png" alt="scissors-hand">
+        </div>
+    </div>
+
+    <p id="action-msg">Make you move</p>
 </body>
 </html>
