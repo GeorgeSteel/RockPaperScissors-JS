@@ -9,6 +9,7 @@ const rockDiv = document.querySelector('#r');
 const paperDiv = document.querySelector('#p');
 const scissorsDiv = document.querySelector('#s');
 
+
 const smallUserWord = 'user'.fontsize(3).sup();
 const smallCompWord = 'comp'.fontsize(3).sup();
 
@@ -37,28 +38,43 @@ function translate(choice) {
 }
 
 function wins(user, computer){
+    const userChoiceDiv = document.querySelector('#' + user);
     userScore++;
     userScoreSpan.innerHTML = userScore;
     computerScoreSpan.innerHTML = computerScore;
 
     resultDiv.innerHTML = `${translate(user)}${smallUserWord} beats ${translate(computer)}${smallCompWord}. You Win!!!`;
+    userChoiceDiv.classList.add('green-glow');
+    setTimeout(() => {
+        userChoiceDiv.classList.remove('green-glow');
+    }, 500);    
 }
 
 function lose(user, computer){
+    const userChoiceDiv = document.querySelector('#' + user);
     computerScore++;
     computerScoreSpan.innerHTML = computerScore;
     userScoreSpan.innerHTML = userScore;   
 
     resultDiv.innerHTML = `${translate(computer)}${smallCompWord} beats ${translate(user)}${smallUserWord}. You Lost...`;
+    userChoiceDiv.classList.add('red-glow');
+    setTimeout(() => {
+        userChoiceDiv.classList.remove('red-glow');
+    }, 500);
 }
 
 function draw(user, computer){
+    const userChoiceDiv = document.querySelector('#' + user);
     userScore++;
     computerScore++;
     computerScoreSpan.innerHTML = computerScore;
     userScoreSpan.innerHTML = userScore;    
     
     resultDiv.innerHTML = 'DRAWWW!!!';
+    userChoiceDiv.classList.add('gray-glow');
+    setTimeout(() => {
+        userChoiceDiv.classList.remove('gray-glow');
+    }, 500);
 }
 
 function game(userChoice) {
