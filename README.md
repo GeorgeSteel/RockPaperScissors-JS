@@ -8,10 +8,13 @@ The classical game maded just with **JS**, with a little of **CSS** effects and 
 ![normal](img/normal.png)
 
 *Lost:*
+
 ![lost](img/lost.png)
 
 *Draw:*
+
 ![draw](img/draw.png)
 
 *Win:*
+
 ![win](img/win.png)
